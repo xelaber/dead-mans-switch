@@ -1,2 +1,0 @@
-[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
-[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
