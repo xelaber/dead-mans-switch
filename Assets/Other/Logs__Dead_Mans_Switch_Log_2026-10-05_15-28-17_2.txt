@@ -1,0 +1,15 @@
+[✓] Previous version zipped: History/Dead_Mans_Switch_Previous_2026-10-05_15-31-19_normal_update.zip (4.2 KB)
+[2026-10-05 15:31:19] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git reset
+[2026-10-05 15:31:19] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git rm -r --cached --ignore-unmatch .
+[2026-10-05 15:31:19] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- History/Dead_Mans_Switch_Previous_2026-10-05_15-31-19_normal_update.zip
+[2026-10-05 15:31:19] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git diff --cached --name-only
+[2026-10-05 15:31:19] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git diff --cached --name-only
+[2026-10-05 15:31:19] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git commit -m Archive previous version before normal update
+[2026-10-05 15:31:20] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git rev-parse --abbrev-ref HEAD
+[2026-10-05 15:31:20] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git rev-parse --abbrev-ref HEAD
+[*] Pushing to GitHub...
+[2026-10-05 15:31:20] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git push -u origin main
+[2026-10-05 15:31:24] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-mans-switch/pages --jq .html_url
+[2026-10-05 15:31:25] [CMD_FAIL] rc=1 | gh api repos/xelaber/dead-mans-switch/pages --jq .html_url
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/pages/pages#get-a-apiname-pages-site","status":"404"}gh: Not Found (HTTP 404)
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch

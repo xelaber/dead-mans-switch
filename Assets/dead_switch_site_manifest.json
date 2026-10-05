@@ -1,0 +1,74 @@
+{
+  "app": "Dead Man's Switch",
+  "repo": "dead-mans-switch",
+  "owner": "xelaber",
+  "repository_url": "https://github.com/xelaber/dead-mans-switch",
+  "github_pages_url": "https://xelaber.github.io/dead-mans-switch/",
+  "generated_at": "2026-10-05 15:31:25",
+  "total_files_indexed": 7,
+  "counts": {
+    "photos": 0,
+    "videos": 0,
+    "audio": 0,
+    "locations": 0,
+    "documents": 5
+  },
+  "files": [
+    {
+      "rel": "Logs/Dead_Mans_Switch_Log_2026-10-05_15-28-17.txt",
+      "kind": "Document",
+      "size_h": "88 B",
+      "date": "2026-10-05",
+      "time": "15:31:25",
+      "updated": "2026-10-05 15:31:25"
+    },
+    {
+      "rel": "Assets/Other/Logs__Dead_Mans_Switch_Log_2026-10-05_15-28-17_3.txt",
+      "kind": "Document",
+      "size_h": "176 B",
+      "date": "2026-10-05",
+      "time": "15:31:25",
+      "updated": "2026-10-05 15:31:25"
+    },
+    {
+      "rel": "README.md",
+      "kind": "Document",
+      "size_h": "5.0 KB",
+      "date": "2026-10-05",
+      "time": "15:31:25",
+      "updated": "2026-10-05 15:31:25"
+    },
+    {
+      "rel": "Assets/Other/Logs__Dead_Mans_Switch_Log_2026-10-05_15-28-17_2.txt",
+      "kind": "Document",
+      "size_h": "1.9 KB",
+      "date": "2026-10-05",
+      "time": "15:31:25",
+      "updated": "2026-10-05 15:31:25"
+    },
+    {
+      "rel": "History/Dead_Mans_Switch_Previous_2026-10-05_15-31-19_normal_update.zip",
+      "kind": "File",
+      "size_h": "4.2 KB",
+      "date": "2026-10-05",
+      "time": "15:31:19",
+      "updated": "2026-10-05 15:31:19"
+    },
+    {
+      "rel": "Assets/Other/Logs__Dead_Mans_Switch_Log_2026-10-05_15-28-17.txt",
+      "kind": "Document",
+      "size_h": "24.7 KB",
+      "date": "2026-10-05",
+      "time": "15:31:18",
+      "updated": "2026-10-05 15:31:18"
+    },
+    {
+      "rel": ".gitignore",
+      "kind": "File",
+      "size_h": "45 B",
+      "date": "2026-10-05",
+      "time": "15:30:41",
+      "updated": "2026-10-05 15:30:41"
+    }
+  ]
+}

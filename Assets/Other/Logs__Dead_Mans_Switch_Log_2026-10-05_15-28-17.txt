@@ -1,0 +1,229 @@
+[2026-10-05 15:28:17] [START] Dead Man's Switch started | script=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base/Dead Man's Switch.py | python=3.14.6 | cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base
+[*] Log file: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch/Logs/Dead_Mans_Switch_Log_2026-10-05_15-28-17.txt
+===================================
+ Dead Man's Switch (Termux, no root)
+===================================
+Local folder: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch (resolved: /storage/emulated/0/Download/Dead Man's Switch)  (downloads: /data/data/com.termux/files/home/storage/downloads)
+Log file    : /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch/Logs/Dead_Mans_Switch_Log_2026-10-05_15-28-17.txt
+GitHub repo : dead-mans-switch (preference: PUBLIC)
+Version     : 2026-06-02 force-new-repo-visible-v3
+Script file : /data/data/com.termux/files/home/DedSec/Scripts/Developer Base/Dead Man's Switch.py
+Upload rules:
+ - Missing Termux packages install automatically only when needed.
+ - Each batch push <= 40MB total; any single file > 40MB is skipped.
+ - Before normal repository publishes, the previous snapshot is zipped in History/.
+ - Repository cleanup removes old Git-tracked files from the repo, not from your phone storage.
+Modes:
+ - Create/Update: archives previous snapshot, rebuilds README + GitHub Pages, uploads current files.
+ - I Need Help: first-time setup, queues existing local files, emergency capture, auto-upload, SMS alert, public website.
+Login persists via GitHub CLI in Termux HOME (~/.config/gh).
+
+1) Dead Man's Switch Repository
+2) I Need Help
+3) Settings
+4) Clean Repository
+5) Exit
+
+Select: 
+=== Create / Update Switch Repository ===
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[*] Checking GitHub login status...
+
+[!] You are not logged in to GitHub CLI (gh).
+    Starting device/web login (modern, no password).
+    Follow the instructions in Termux.
+
+[2026-10-05 15:28:35] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh auth login --hostname github.com --git-protocol https --web
+[2026-10-05 15:30:20] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh auth status -h github.com
+[2026-10-05 15:30:21] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api user --jq .login
+[2026-10-05 15:30:22] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh auth status -h github.com
+[2026-10-05 15:30:23] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead-Switch --jq .name
+[2026-10-05 15:30:25] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead-Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:25] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead-Switch --json name --jq .name
+[2026-10-05 15:30:25] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead-Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead-Switch'. (repository)
+[2026-10-05 15:30:25] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/DeadSwitch --jq .name
+[2026-10-05 15:30:26] [CMD_FAIL] rc=1 | gh api repos/xelaber/DeadSwitch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:26] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/DeadSwitch --json name --jq .name
+[2026-10-05 15:30:27] [CMD_FAIL] rc=1 | gh repo view xelaber/DeadSwitch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/DeadSwitch'. (repository)
+[2026-10-05 15:30:27] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead_Switch --jq .name
+[2026-10-05 15:30:28] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead_Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:28] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead_Switch --json name --jq .name
+[2026-10-05 15:30:29] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead_Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead_Switch'. (repository)
+[2026-10-05 15:30:29] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead-Switch.py --jq .name
+[2026-10-05 15:30:29] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead-Switch.py --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:29] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead-Switch.py --json name --jq .name
+[2026-10-05 15:30:30] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead-Switch.py --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead-Switch.py'. (repository)
+[2026-10-05 15:30:30] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead Switch --jq .name
+[2026-10-05 15:30:31] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:31] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead Switch --json name --jq .name
+[2026-10-05 15:30:32] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead Switch'. (repository)
+[2026-10-05 15:30:32] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-switch --jq .name
+[2026-10-05 15:30:32] [CMD_FAIL] rc=1 | gh api repos/xelaber/dead-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:32] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/dead-switch --json name --jq .name
+[2026-10-05 15:30:33] [CMD_FAIL] rc=1 | gh repo view xelaber/dead-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/dead-switch'. (repository)
+[2026-10-05 15:30:33] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-mans-switch --jq .name
+[2026-10-05 15:30:34] [CMD_FAIL] rc=1 | gh api repos/xelaber/dead-mans-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:34] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/dead-mans-switch --json name --jq .name
+[2026-10-05 15:30:34] [CMD_FAIL] rc=1 | gh repo view xelaber/dead-mans-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/dead-mans-switch'. (repository)
+[*] Creating PUBLIC repo: xelaber/dead-mans-switch
+[2026-10-05 15:30:34] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api -X POST user/repos -f name=dead-mans-switch -f private=false -f auto_init=false
+[*] Repo created.
+[2026-10-05 15:30:38] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api -X PATCH repos/xelaber/dead-mans-switch -f private=false
+[2026-10-05 15:30:39] [CMD_FAIL] rc=1 | gh api -X PATCH repos/xelaber/dead-mans-switch -f private=false
+{"message":"Failed to update visibility. A previous repository operation is still in progress.","documentation_url":"https://docs.github.com/rest/repos/repos#update-a-repository","status":"422"}gh: Failed to update visibility. A previous repository operation is still in progress. (HTTP 422)
+[2026-10-05 15:30:39] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo edit xelaber/dead-mans-switch --visibility public --accept-visibility-change-consequences
+[2026-10-05 15:30:40] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global --add safe.directory /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[2026-10-05 15:30:40] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global --add safe.directory /sdcard/Download/Dead Man's Switch
+[2026-10-05 15:30:40] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global --add safe.directory /storage/emulated/0/Download/Dead Man's Switch
+[2026-10-05 15:30:40] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global user.name
+[2026-10-05 15:30:40] [CMD_FAIL] rc=1 | git config --global user.name
+[2026-10-05 15:30:40] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global user.email
+[2026-10-05 15:30:40] [CMD_FAIL] rc=1 | git config --global user.email
+[2026-10-05 15:30:40] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global user.name dead-mans-switch-termux
+[2026-10-05 15:30:40] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global user.email dead-mans-switch@localhost
+[*] Initializing local git repo...
+[2026-10-05 15:30:40] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git init
+[2026-10-05 15:30:41] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git config user.name dead-mans-switch-termux
+[2026-10-05 15:30:41] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git config user.email dead-mans-switch@localhost
+[2026-10-05 15:30:41] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git remote
+[2026-10-05 15:30:41] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git remote add origin https://github.com/xelaber/dead-mans-switch.git
+[2026-10-05 15:30:41] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead-Switch --jq .name
+[2026-10-05 15:30:42] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead-Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:42] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead-Switch --json name --jq .name
+[2026-10-05 15:30:43] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead-Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead-Switch'. (repository)
+[2026-10-05 15:30:43] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/DeadSwitch --jq .name
+[2026-10-05 15:30:44] [CMD_FAIL] rc=1 | gh api repos/xelaber/DeadSwitch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:44] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/DeadSwitch --json name --jq .name
+[2026-10-05 15:30:44] [CMD_FAIL] rc=1 | gh repo view xelaber/DeadSwitch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/DeadSwitch'. (repository)
+[2026-10-05 15:30:44] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead_Switch --jq .name
+[2026-10-05 15:30:45] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead_Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:45] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead_Switch --json name --jq .name
+[2026-10-05 15:30:46] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead_Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead_Switch'. (repository)
+[2026-10-05 15:30:46] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead-Switch.py --jq .name
+[2026-10-05 15:30:47] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead-Switch.py --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:47] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead-Switch.py --json name --jq .name
+[2026-10-05 15:30:48] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead-Switch.py --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead-Switch.py'. (repository)
+[2026-10-05 15:30:48] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead Switch --jq .name
+[2026-10-05 15:30:49] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:49] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead Switch --json name --jq .name
+[2026-10-05 15:30:50] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead Switch'. (repository)
+[2026-10-05 15:30:50] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-switch --jq .name
+[2026-10-05 15:30:51] [CMD_FAIL] rc=1 | gh api repos/xelaber/dead-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:51] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/dead-switch --json name --jq .name
+[2026-10-05 15:30:52] [CMD_FAIL] rc=1 | gh repo view xelaber/dead-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/dead-switch'. (repository)
+[2026-10-05 15:30:52] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-mans-switch --jq .name
+[2026-10-05 15:30:53] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-mans-switch --jq .default_branch
+[2026-10-05 15:30:54] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git fetch origin --prune
+[2026-10-05 15:30:55] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git ls-remote --heads origin main
+[2026-10-05 15:30:56] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git ls-remote --heads origin master
+[2026-10-05 15:30:57] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git checkout -B main
+[2026-10-05 15:30:57] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead-Switch --jq .name
+[2026-10-05 15:30:57] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead-Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:57] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead-Switch --json name --jq .name
+[2026-10-05 15:30:58] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead-Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead-Switch'. (repository)
+[2026-10-05 15:30:58] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/DeadSwitch --jq .name
+[2026-10-05 15:30:59] [CMD_FAIL] rc=1 | gh api repos/xelaber/DeadSwitch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:30:59] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/DeadSwitch --json name --jq .name
+[2026-10-05 15:30:59] [CMD_FAIL] rc=1 | gh repo view xelaber/DeadSwitch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/DeadSwitch'. (repository)
+[2026-10-05 15:30:59] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead_Switch --jq .name
+[2026-10-05 15:31:01] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead_Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:01] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead_Switch --json name --jq .name
+[2026-10-05 15:31:02] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead_Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead_Switch'. (repository)
+[2026-10-05 15:31:02] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead-Switch.py --jq .name
+[2026-10-05 15:31:02] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead-Switch.py --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:02] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead-Switch.py --json name --jq .name
+[2026-10-05 15:31:03] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead-Switch.py --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead-Switch.py'. (repository)
+[2026-10-05 15:31:03] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead Switch --jq .name
+[2026-10-05 15:31:04] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:04] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead Switch --json name --jq .name
+[2026-10-05 15:31:05] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead Switch'. (repository)
+[2026-10-05 15:31:05] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-switch --jq .name
+[2026-10-05 15:31:06] [CMD_FAIL] rc=1 | gh api repos/xelaber/dead-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:06] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/dead-switch --json name --jq .name
+[2026-10-05 15:31:07] [CMD_FAIL] rc=1 | gh repo view xelaber/dead-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/dead-switch'. (repository)
+[2026-10-05 15:31:07] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-mans-switch --jq .name
+[2026-10-05 15:31:07] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead-Switch --jq .name
+[2026-10-05 15:31:08] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead-Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:08] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead-Switch --json name --jq .name
+[2026-10-05 15:31:09] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead-Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead-Switch'. (repository)
+[2026-10-05 15:31:09] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/DeadSwitch --jq .name
+[2026-10-05 15:31:09] [CMD_FAIL] rc=1 | gh api repos/xelaber/DeadSwitch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:09] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/DeadSwitch --json name --jq .name
+[2026-10-05 15:31:10] [CMD_FAIL] rc=1 | gh repo view xelaber/DeadSwitch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/DeadSwitch'. (repository)
+[2026-10-05 15:31:10] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead_Switch --jq .name
+[2026-10-05 15:31:11] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead_Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:11] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead_Switch --json name --jq .name
+[2026-10-05 15:31:12] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead_Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead_Switch'. (repository)
+[2026-10-05 15:31:12] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead-Switch.py --jq .name
+[2026-10-05 15:31:13] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead-Switch.py --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:13] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead-Switch.py --json name --jq .name
+[2026-10-05 15:31:13] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead-Switch.py --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead-Switch.py'. (repository)
+[2026-10-05 15:31:13] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/Dead Switch --jq .name
+[2026-10-05 15:31:14] [CMD_FAIL] rc=1 | gh api repos/xelaber/Dead Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:14] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/Dead Switch --json name --jq .name
+[2026-10-05 15:31:15] [CMD_FAIL] rc=1 | gh repo view xelaber/Dead Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/Dead Switch'. (repository)
+[2026-10-05 15:31:15] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-switch --jq .name
+[2026-10-05 15:31:15] [CMD_FAIL] rc=1 | gh api repos/xelaber/dead-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-10-05 15:31:15] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view xelaber/dead-switch --json name --jq .name
+[2026-10-05 15:31:16] [CMD_FAIL] rc=1 | gh repo view xelaber/dead-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name 'xelaber/dead-switch'. (repository)
+[2026-10-05 15:31:16] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-mans-switch --jq .name
+[2026-10-05 15:31:17] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-mans-switch --jq .default_branch
+[2026-10-05 15:31:18] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/xelaber/dead-mans-switch/git/trees/main -f recursive=1
+[2026-10-05 15:31:18] [CMD_FAIL] rc=1 | gh api repos/xelaber/dead-mans-switch/git/trees/main -f recursive=1
+{
+  "message": "Not Found",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "404"
+}gh: Not Found (HTTP 404)
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
